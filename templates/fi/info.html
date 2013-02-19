@@ -1,46 +1,8 @@
-﻿<!doctype html>
-<html>
-<head>
-<title>Järkeä tekijänoikeuslakiin</title>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
+﻿{% extends "_base.html" %}
+{% block pagename %}info.html{% endblock %}
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 64px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-	.big-btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
+{% block content %}
+<style>
 	.centering {
 		text-align: center;
 	}
@@ -53,13 +15,9 @@
       .marketing {
         margin: 80px 0;
       }
-
-
-
 </style>
-</head>
-<body>
-<div class="container">
+
+
 
 <div class="jumbotron">
 	<h1>Järkeä tekijänoikeuslakiin</h1>
@@ -79,7 +37,7 @@
 	<p>
 "Järkeä tekijänoikeuslakiin" on <a href="https://www.kansalaisaloite.fi/fi/ohjeet">kansalaisaloite</a>, jolla on tarkoitus 
 järkeistää Suomen tekijänoikeuslakia. 
-Lakialoite päätyy suoraan eduskunnan käsiteltäväksi, mikäli 50&nbsp;000 äänioikeutettua Suomen kansalaista <a href="index.html">allekirjoittaa</a> sen.
+Kansalaisaloitelain mukaan lakialoite päätyy suoraan eduskunnan käsiteltäväksi, mikäli 50&nbsp;000 äänioikeutettua Suomen kansalaista <a href="index.html">allekirjoittaa</a> sen.
 </p>
 <br/>
 
@@ -147,7 +105,7 @@ esimerkiksi verkkopankkitunnuksin.
 </p>
 <p>
 Jos et halua tai voi tunnistautua sähköisesti, aloitteen voi
-myös allekirjoittaa <a href="tapahtumat.fi.html">tapahtumissamme</a> tai postitse <a href="paperiversio.fi.html">paperisella kannatusilmoituksella</a>.
+myös allekirjoittaa <a href="events.html">tapahtumissamme</a> tai postitse <a href="paper.html">paperisella kannatusilmoituksella</a>.
 </p>
 <br/>
 <p>
@@ -164,8 +122,4 @@ Lue lisää aloitteesta <a href="http://bit.ly/XXS7J9">lehdistötiedotteestamme 
 	Kampanjaa vetää <a href="http://www.avoinministerio.fi/">Avoin ministeriö</a>.
 </div>
 
-
-<script src="jquery/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+{% endblock %}

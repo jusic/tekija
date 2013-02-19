@@ -1,0 +1,97 @@
+﻿{% extends "_base.html" %}
+
+{% block pagename %}index.html{% endblock%}
+{% block content %}
+
+<div class="jumbotron">
+	<h1>Common sense to the copyright law</h1>
+	<!--
+	<div class="progress progress-info progress-striped" style="width: 60%; margin: 0px auto;">
+	  <div class="bar" style="width: 32%;">16 227 / 50 000</div>
+	</div>-->
+</div>
+
+<div class="row-fluid">
+	<div class="span12 centering">
+	<h2>Sign the law proposal</h2>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span12">
+	<div class="centering">
+	<a href="https://www.kansalaisaloite.fi/fi/aloite/70" class="btn big-btn btn-primary" style="margin-right: 20px">Online</a>
+	<a href="paper.html" class="btn big-btn btn-inverse">On paper</a>
+	</div>
+	</div>
+</div>
+
+<div class="row-fluid" style="margin-top: 20px">
+	<div class="span12 centering">
+	<a href="events.html" class="btn big-btn btn-danger">In an event</a>
+	</div>
+</div>
+
+
+<div class="marketing">
+	<div class="row-fluid">
+		<div class="span4">
+		<h2>Read more</h2>
+		<p>Read through
+		<a href="info.html">the law proposal summary</a>,
+		<a href="https://www.kansalaisaloite.fi/fi/ohjeet">information about the Finnish citizen initative</a>, 
+		or the official <a href="https://www.kansalaisaloite.fi/fi/aloite/70">law proposal.</a>
+		</p>
+		<!--<p>Jos sinulla on kysyttävää, <a href="">ota yhteyttä kampanjan vetäjiin</a> tai tule tapaamaan kampanjan edustajia <a href="">tapahtumiimme</a>.-->
+		</div>
+
+	
+		<div class="span4">
+		<h2>Share information</h2>
+		<p>
+		Spread the knowledge by discussing and linking, 
+		for instance in the social media.
+		</p>
+		</div>
+
+		<div class="span4">
+		<h2>Take part</h2>
+		<p>
+		If you have already signed, or you want to help in
+		getting the campaign forward, join as a signature collector
+		or take part in the other activities. 
+		Invite your friends too!
+		</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+		<a href="info.html" class="btn big-btn btn-primary">Read the summary</a>
+		</div>
+		<div class="span4">
+
+		<div class="fb-like" data-href="http://www.facebook.com/events/526562650699571/" data-send="false" data-width="450" data-show-faces="true"></div>
+
+		</div>
+		<div class="span4">
+		<a href="http://bit.ly/Yxy0zP" class="btn big-btn btn-primary">Read more</a>
+		</div>
+	</div>
+
+
+</div>
+
+<div class="footer centering">
+	The campaign is led by <a href="http://www.avoinministerio.fi/">Avoin ministeriö</a>.
+</div>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+
+{% endblock %}

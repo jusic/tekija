@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>Järkeä tekijänoikeuslakiin</title>
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style type="text/css">
+body {
+padding-top: 20px;
+padding-bottom: 60px;
+}
+
+/* Custom container */
+.container {
+margin: 0 auto;
+max-width: 1000px;
+}
+.container > hr {
+margin: 60px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+margin: 80px 0;
+text-align: center;
+}
+.jumbotron h1 {
+font-size: 64px;
+line-height: 1;
+}
+.jumbotron .lead {
+font-size: 24px;
+line-height: 1.25;
+}
+.jumbotron .btn {
+font-size: 21px;
+padding: 14px 24px;
+}
+
+.big-btn {
+font-size: 21px;
+padding: 14px 24px;
+}
+
+.centering {
+	text-align: center;
+}
+
+.marketing {
+margin: 80px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="row-fluid">
+	<div class="span12">
+	<p class="pull-right">
+	<a href="../fi/{% block pagename %}{% endblock %}">suomeksi</a> | <a href="../sv/{{ self.pagename() }}">på svenska</a> | <a href="../en/{{ self.pagename() }}">in English</a>
+	</p>
+	</div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</div>
+<script src="../jquery/jquery.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
