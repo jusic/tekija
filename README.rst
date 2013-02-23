@@ -39,11 +39,12 @@ The main root ``index.html`` redirects to ``fi/index.html``.
 Troubleshooting
 ---------------
 
-**Running build.py gives** ``TypeError: writelines() argument must be a sequence of strings``.
+**Running build.py gives** 
+``TypeError: writelines() argument must be a sequence of strings``.
 
-This is probably a bug in staticjinja or jinja2, which prevents writing 
-unicode characters (i.e. scandinavian alphabet) in the templates. 
-For a quick-and-dirty fix for this, patch the file
+This is probably a bug in staticjinja 0.0.8 or jinja2 2.6, which prevents 
+writing unicode characters (i.e. scandinavian alphabet) in the templates. 
+For a quick-and-dirty fix for this, manually patch the file
 ``venv/lib/python2.7/site-packages/jinja2/environment.py`` around line 1053
 from:
 
@@ -71,8 +72,8 @@ directory.
 Few guidelines for development:
 
 - Please try to keep the translations in sync, whatever you do. 
-  If you can't translate, please mark respective passages untranslated 
-  in your edited text.
+  If you can't translate your changes properly, please mark respective 
+  passages untranslated in your edited text.
 
 - Please respect copyright and other laws. 
 
