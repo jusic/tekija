@@ -48,13 +48,15 @@ For a quick-and-dirty fix for this, manually patch the file
 ``venv/lib/python2.7/site-packages/jinja2/environment.py`` around line 1053
 from:
 
-:: 
- def dump(self, fp, encoding=None, errors='strict'):
+ :: 
+  
+  def dump(self, fp, encoding=None, errors='strict'):
 
 to:
 
-::
- def dump(self, fp, encoding="utf-8", errors='strict'):
+ ::
+
+  def dump(self, fp, encoding="utf-8", errors='strict'):
 
 A better fix for this is welcome, and please send it to upstream as well. 
 One possibility is to patch the staticjinja code which calls this function.
