@@ -1,5 +1,5 @@
 .. you can compile a version of this text using rst2html.py, see docutils.sf.net
-
+.. $ rst2html.py README.rst > README.html
 
 Järkeä tekijänoikeuslakiin
 ==========================
@@ -30,10 +30,12 @@ leave your system Python installation intact. We use Python 2.7 currently.
 Usage
 -----
 
-To compile the static html versions of the web page, run ``python build.py``. 
-This will create ``en/``, ``fi/`` and ``sv/`` directories to the main root.
+To compile the static html versions of the web page, activate the 
+virtualenv environment (see 4. above) and run ``python build.py``. 
+This will create ``en/``, ``fi/`` and ``sv/`` directories to the 
+``static-output`` directory.
 
-The main root ``index.html`` redirects to ``fi/index.html``.
+The root ``index.html`` inside ``static-output`` redirects to ``fi/index.html``.
 
 
 Troubleshooting
