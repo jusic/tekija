@@ -35,6 +35,30 @@ This will create ``en/``, ``fi/`` and ``sv/`` directories to the main root.
 
 The main root ``index.html`` redirects to ``fi/index.html``.
 
+
+Troubleshooting
+---------------
+
+**Running build.py gives** ``TypeError: writelines() argument must be a sequence of strings``.
+
+This is probably a bug in staticjinja or jinja2, which prevents writing 
+unicode characters (i.e. scandinavian alphabet) in the templates. 
+For a quick-and-dirty fix for this, patch the file
+``venv/lib/python2.7/site-packages/jinja2/environment.py`` around line 1053
+from:
+
+:: 
+ def dump(self, fp, encoding=None, errors='strict'):
+
+to:
+
+::
+ def dump(self, fp, encoding="utf-8", errors='strict'):
+
+A better fix for this is welcome, and please send it to upstream as well. 
+One possibility is to patch the staticjinja code which calls this function.
+
+
 Development
 -----------
 
