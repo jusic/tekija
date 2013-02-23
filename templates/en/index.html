@@ -70,22 +70,13 @@
 		<a href="#info" class="btn big-btn btn-primary">Read the summary</a>
 		</div>
 		<div class="span4">
+		<div id="socialshareprivacy" style="margin-left: 20px"></div>
 		</div>
 		<div class="span4">
 		<a href="http://bit.ly/Yxy0zP" class="btn big-btn btn-primary">Read more</a>
 		</div>
 	</div>
 
-	<div class="row-fluid">
-		<div class="span4">
-		
-		</div>
-		<div class="span4">
-		<div class="fb-like" data-href="http://www.facebook.com/events/526562650699571/" data-send="false" data-width="450" data-show-faces="true"></div>
-		</div>
-		<div class="span4">
-		</div>
-	</div>
 </div>
 
 {% include "en/_info.html" %}
@@ -95,14 +86,18 @@
 	The campaign is led by <a href="http://www.avoinministerio.fi/">Avoin ministeriö</a>.
 </div>
 
+{% endblock %}
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	  }(document, 'script', 'facebook-jssdk'));</script>
+{% block endscripts %}
+<script>
+	$.extend($.fn.socialSharePrivacy.settings, {
+		path_prefix: "../socialshareprivacy/",
+		uri: "http://www.jarkeatekijanoikeuslakiin.fi/",
+		lang: "en",
+	});
 
+	$(document).ready(function() {
+		$('#socialshareprivacy').socialSharePrivacy();
+	});
+</script>
 {% endblock %}

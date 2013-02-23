@@ -61,6 +61,7 @@
 		<a href="#info" class="btn big-btn btn-primary">Lue tiivistelmä</a>
 		</div>
 		<div class="span4">
+		<div id="socialshareprivacy" style="margin-left: 20px"></div>	
 		</div>
 		<div class="span4">
 		<a href="http://bit.ly/Yxy0zP" class="btn big-btn btn-primary">Lue lisää</a>
@@ -70,10 +71,6 @@
 		<div class="span4">
 		</div>
 		<div class="span4">
-
-		<!-- tähän voisi laittaa jonkun paremman social-media-plugarin -->
-		<div class="fb-like" data-href="http://www.facebook.com/events/526562650699571/" data-send="false" data-width="450" data-show-faces="true"></div>
-
 		</div>
 		<div class="span4">
 		</div>
@@ -88,14 +85,22 @@
 	Kampanjaa vetää <a href="http://www.avoinministerio.fi/">Avoin ministeriö</a>.
 </div>
 
+{% endblock %}
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
-	  }(document, 'script', 'facebook-jssdk'));</script>
+{% block endscripts %}
+<script src="../socialshareprivacy/scripts/fi/jquery.socialshareprivacy.js"></script>
+<script src="../socialshareprivacy/scripts/fi/jquery.socialshareprivacy.facebook.js"></script>
+<script src="../socialshareprivacy/scripts/fi/jquery.socialshareprivacy.twitter.js"></script>
+<script src="../socialshareprivacy/scripts/fi/jquery.socialshareprivacy.gplus.js"></script>
+<script>
+	$.extend($.fn.socialSharePrivacy.settings, {
+		path_prefix: "../socialshareprivacy/",
+		uri: "http://www.jarkeatekijanoikeuslakiin.fi/",
+		lang: "fi",
+	});
 
+	$(document).ready(function() {
+		$('#socialshareprivacy').socialSharePrivacy();
+	});
+</script>
 {% endblock %}
