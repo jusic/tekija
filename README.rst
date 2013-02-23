@@ -38,6 +38,29 @@ This will create ``en/``, ``fi/`` and ``sv/`` directories to the
 The root ``index.html`` inside ``static-output`` redirects to ``fi/index.html``.
 
 
+Contributing
+------------
+
+Contributions are warmly welcome, send pull requests on GitHub. 
+
+To hack the site further, edit the page templates under ``templates/`` 
+directory. 
+
+
+Few guidelines for development:
+
+- Please try to keep the translations in sync, whatever you do. 
+  If you can't translate your changes properly, please mark respective 
+  passages untranslated in your edited text.
+
+- Please respect copyright and other laws. 
+
+- Please attribute all quotations properly. 
+
+- If you add pictures, please make sure that they are properly downsized.
+  (I will not allow big pictures (>100-200kB) to the repository.)
+
+
 Troubleshooting
 ---------------
 
@@ -64,24 +87,3 @@ A better fix for this is welcome, and please send it to upstream as well.
 One possibility is to patch the staticjinja code which calls this function.
 
 
-Development
------------
-
-Contributions are warmly welcome, send pull requests on GitHub. 
-
-To hack the site further, edit the page templates under ``templates/`` 
-directory. 
-
-
-Few guidelines for development:
-
-- Please try to keep the translations in sync, whatever you do. 
-  If you can't translate your changes properly, please mark respective 
-  passages untranslated in your edited text.
-
-- Please respect copyright and other laws. 
-
-- Please attribute all quotations properly. 
-
-- If you add pictures, please make sure that they are properly downsized.
-  (I will not allow big pictures (>100-200kB) to the repository.)
