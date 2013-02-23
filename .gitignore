@@ -1,5 +1,9 @@
-static-output/fi
-static-output/en
-static-output/sv
-venv/
+/static-output/fi
+/static-output/en
+/static-output/sv
+/venv/
+/fi/
+/en/
+/sv/
 README.html
+LICENSE.html
