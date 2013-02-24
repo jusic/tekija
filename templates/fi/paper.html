@@ -1,5 +1,58 @@
-<html>
-<body>
-placeholder
-</body>
-</html>
+{% extends "_base.html" %}
+
+{% block pagename %}paper.html{% endblock%}
+{% block content %}
+<div class="jumbotron">
+	<h1><a href="./">Järkeä tekijänoikeuslakiin</a></h1>
+</div>
+
+<div class="row-fluid">
+	<div class="span3">
+	</div>
+	<div class="span6 centering">
+	<h2>Paperinen kannatusilmoitus</h2>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span3">
+	</div>
+	<div class="span6">
+	<p>
+	Mikäli et voi tai halua allekirjoittaa lakialoitetta sähköisesti,
+	voit toimittaa paperille tulostetun ja allekirjoittaa 
+	kannatusilmoituksen kansalaisaloitteen edustajalle.
+	Toimi näin:
+	</p>
+	<ol class="biglist">
+		<li><b>Tulosta</b> <a href="../files/kannatusilmoitus.pdf">kannatusilmoitus</a> A4-paperille.
+		<li><b>Täytä ja allekirjoita</b> kannatusilmoitus.
+		<li><b>Postita</b> kannatusilmoitus osoitteeseen:
+		<p>
+		<address>
+<strong>Avoin ministeriö</strong><br>
+c/o Joonas Pekkanen<br>
+Caloniuksenkatu 10 D 67<br>
+00100 Helsinki<br>
+		</address>
+		</p>
+	</ol>
+	<p>
+	Henkilötietojasi luovutetaan vain 
+	<a href="http://www.vrk.fi/">Väestörekisterikeskukselle</a>
+	lopullista tarkistusta ja laskentaa varten. Kansalaisaloitelaki säätää 
+	henkilötietojen käsittelystä muunmuassa seuraavaa:
+	</p>
+	<blockquote>
+	<p>
+	Kannatusilmoituksessa kerättyjä henkilötietoja voidaan käyttää vain
+	tässä laissa säädetyllä tavalla. Vireillepanija ja tämän
+	edustaja voivat luovuttaa tietoja vain Väestörekisterikeskukselle.
+	Viranomaisten hallussa olevat tiedot ovat julkisia, kun perustuslaissa
+	säädetty kannatusilmoitusten vähimmäismäärä on täyttynyt. 
+	</p>
+	<small><cite><a href="http://www.finlex.fi/fi/laki/alkup/2012/20120012#Pid1878842">Kansalaisaloitelaki (12/2012).</a></cite></small>
+	<blockquote>
+	</div>
+</div>
+
+{% endblock %}
